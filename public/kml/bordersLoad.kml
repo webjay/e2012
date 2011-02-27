@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+	<Folder>
+
+		<NetworkLink>
+			<name>Borders</name>
+			<Link>
+				<href>http://www.digitaltlandkort.dk/kml/borders.kml</href>
+			</Link>
+		</NetworkLink>
+
+	</Folder>
+</kml>

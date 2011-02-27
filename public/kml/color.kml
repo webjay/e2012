@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+
+	<NetworkLinkControl> 
+		<Update> 
+			<targetHref>http://www.digitaltlandkort.dk/kml/borders.kml</targetHref> 
+			<Change> 
+				<Placemark targetId="frederikshavn">
+					<Style>
+						<PolyStyle>
+							<color>ff0000ff</color>
+						</PolyStyle>
+					</Style>
+				</Placemark>
+			</Change>
+		</Update> 
+	</NetworkLinkControl>
+
+</kml>

@@ -1,0 +1,184 @@
+
+dl {
+	margin-bottom: 0;
+}
+
+#logo img {
+	height: 60px;
+	margin-bottom: 20px;
+}
+#logo h1 {
+	font-size: 2.5em;
+}
+#logo h1 a {
+	text-decoration: none;
+	color: #000;
+}
+
+#map {
+	position: relative;
+	height: 1100px;
+}
+
+nav {
+	text-align: right;
+	margin-top: 10px;
+}
+nav ul {
+	margin: 0;
+}
+nav ul li {
+	display: inline;
+	list-style-type: none;
+	margin-right: 5px;
+	padding: 2px 5px;
+	font-size: 1.2em;
+}
+nav ul li:last-child {
+	margin-right: 0;
+}
+nav ul li a {
+	color: #000;
+	text-decoration: none;
+}
+
+.right {
+	text-align: right;
+}
+
+.inline {
+	display: inline ! important;
+}
+
+.ml-10 {
+	margin-left: 10px;
+}
+.mr-3 {
+	margin-right: 3px;
+}
+.mr-5 {
+	margin-right: 5px;
+}
+.mr-10 {
+	margin-right: 10px;
+}
+
+/* Form */
+form {
+	/*margin-top: 10px;*/
+}
+.input {
+	margin-bottom: 10px;
+}
+.input:last-child {
+	margin-bottom: 0;
+}
+.text label, .password label, .date label, .select label {
+	display: block;
+}
+.text input, .password input {
+	margin-top: 0;
+}
+input[type="radio"] {
+	top: 0;
+}
+div.radio label {
+	margin-right: 10px;
+}
+input[type="text"] {
+	width: 250px;
+}
+select {
+	margin: 0;
+}
+
+.calc input {
+	width: 150px;
+}
+
+#digiareas {
+	margin-top: 10px;
+	padding: 0;
+}
+#digiareas li {
+	list-style-type: none;
+	display: inline;
+	margin-right: 8px;
+}
+
+.actions {
+	margin-top: 20px;
+}
+
+#flashMessage, #authMessage {
+	display: inline;
+	padding: 5px;
+}
+#authMessage {
+	background: #FFF6BF;
+	color: #514721;
+	border: 1px solid #FFD324;
+}
+#flashMessage {
+	background: #E6EFC2;
+	color: #264409;
+	border: 1px solid #C6D880;
+}
+
+#MunicipalityFormatForm label {
+	display: block;
+}
+
+#tabs li {
+	list-style-type: none;
+}
+
+.submit {
+	text-align: right;
+}
+
+#VisualArea {
+	max-width: 310px;
+}
+
+.fg-button { outline: 0; margin:0 4px 0 0; padding: .1em .3em; text-decoration: none !important; cursor: pointer; position: relative; text-align: center; zoom: 1; }
+.fg-button .ui-icon { position: absolute; top: 50%; margin-top: -8px; left: 50%; margin-left: -8px; }
+
+#map-container {
+	position: relative;
+}
+#overlay {
+	position: absolute;
+	right: 10px;
+	top: 50px;
+	width: 115px;
+	display: none;
+	background-color: #fff;
+	padding: 8px;
+}
+
+.transparent {
+	filter:alpha(opacity=80);
+	-moz-opacity: 0.8;
+	-khtml-opacity: 0.8;
+	opacity: 0.8;
+}
+
+nav.flatmenu {
+	text-align: left;
+}
+nav.flatmenu ul {
+	padding-left: 0;
+}
+nav.flatmenu li {
+	padding: 0;
+}
+nav.flatmenu li:after {
+	content: ' |';
+}
+nav.flatmenu li:last-child {
+	content: '';
+}
+nav.flatmenu a {
+	text-decoration: underline;
+}
