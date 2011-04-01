@@ -83,8 +83,8 @@ class DATABASE_CONFIG {
 		'persistent' => false,
 		'host' => 'localhost',
 		'login' => 'e2012',
-		'password' => '1eY6Em1lqg2hdx8',
-		'database' => 'e2012_digitaltlandkort_cakephp',
+		'password' => 'mF0wAtErin3TSov',
+		'database' => 'e2012_digikort',
 		'prefix' => ''
 	);
 
