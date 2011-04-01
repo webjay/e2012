@@ -1,4 +1,4 @@
-sess_*
-app/tmp/cache/views/*
-app/tmp/logs/*
-app/tmp/cache/persistent/*
+/app/config
+/app/tmp
+/plugins
+/vendors

@@ -48,18 +48,3 @@
  * Inflector::rules('plural', array('rules' => array(), 'irregular' => array(), 'uninflected' => array()));
  *
  */
-
-// if (Configure::read('debug')) {
-// 	App::import('Vendor', 'FirePHPDebugger', array('file' => 'FirePHP'.DS.'FirePHP.debugger.php'));
-// }
-
-Configure::write('Config.language', 'dan');
-setlocale(LC_ALL, 'da_DK.UTF-8', 'da_DK');
-
-if (strpos(strtolower(env('SERVER_NAME')), 'digitaltlandkort.dk') !== false) {
-	define('GOOGLEAPIKEY', 'ABQIAAAAPXCklq_IpLlU0vx0Q9KPnxTKcJNBuIitOpLOaE51qF-O-_dJABTxLYD2x3sB1Xf-Amnsg3t2aq5UwQ');
-} else {
-	define('GOOGLEAPIKEY', 'ABQIAAAAPXCklq_IpLlU0vx0Q9KPnxTKmF9gUE-BCmq2L4Ymf47_ye-gfxQMdecOAdHA7uunMqxcpax3TD-2lw');
-}
-
-?>

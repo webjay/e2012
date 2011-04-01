@@ -3512,6 +3512,10 @@ class DboSourceTest extends CakeTestCase {
 		$result = $this->testDb->order(array('Property.sale_price IS NULL'));
 		$expected = ' ORDER BY `Property`.`sale_price` IS NULL ASC';
 		$this->assertEqual($result, $expected);
+		
+		$result = $this->testDb->order(array('Export.column-name' => 'ASC'));
+		$expected = ' ORDER BY `Export`.`column-name` ASC';
+		$this->assertEqual($result, $expected, 'Columns with -s are not working with order()');
 	}
 
 /**
@@ -4076,6 +4080,14 @@ class DboSourceTest extends CakeTestCase {
 
 		$result = $this->testDb->name(array('my-name', 'Foo-Model.*'));
 		$expected = array('`my-name`', '`Foo-Model`.*');
+		$this->assertEqual($result, $expected);
+
+		$result = $this->testDb->name(array('Team.P%', 'Team.G/G'));
+		$expected = array('`Team`.`P%`', '`Team`.`G/G`');
+		$this->assertEqual($result, $expected);
+
+		$result = $this->testDb->name('Model.name as y');
+		$expected = '`Model`.`name` AS `y`';
 		$this->assertEqual($result, $expected);
 	}
 
