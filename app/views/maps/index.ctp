@@ -39,7 +39,7 @@ $javascript->codeBlock($script, array('inline' => false));
 				e('<b>Digitaliseringsområde</b>');
 				$areas = array(0 => 'Kommunerne generelt') + $areas;
 				e($form->select('Area', $areas));
-				//e($form->submit('Vis', array('div' => false)));
+				e($form->submit('Vis', array('div' => false)));
 				e($form->end());
 			?>
 			<div class="prepend-top">

@@ -20,7 +20,7 @@ google.load("jqueryui", "1");
 google.setOnLoadCallback(function(){
 	jQuery("#tabs").tabs();
 	jQuery("#tabs ul a").click(function(){
-		jQuery("#tabs select").val("");
+		jQuery("#MunicipalitySet").attr("value", jQuery(this).attr("data-set"));
 	});
 });
 ';
@@ -30,12 +30,14 @@ echo($form->create('Municipality', array(
 	'action' => 'download',
 	'type' => 'get'
 )));
+echo($form->hidden('set'));
 
 ?>
 <div id="tabs">
 	<ul>
-		<li><a href="#kom">Kommune</a></li>
-		<li><a href="#dig">Udvalgt digitaliseringsområde</a></li>
+		<li><a href="#kom" data-set="munip">Kommune</a></li>
+		<li><a href="#dig" data-set="area">Udvalgt digitaliseringsområde</a></li>
+		<li><a href="#kom" data-set="process">Process spørgsmål</a></li>
 	</ul>
 <?php
 
@@ -58,12 +60,15 @@ echo('</div>');
 <?php
 
 // format
+/*
 $options = array(
 	'csv' => 'CSV',
 	'xml' => 'XML',
 	'json' => 'JSON'
 );
 echo($form->radio('format', $options, array('default' => 'csv')));
+*/
+echo($form->hidden('format', array('value' => 'csv')));
 
 echo($form->end('Download'));
 

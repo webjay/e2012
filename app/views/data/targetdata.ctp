@@ -1,5 +1,5 @@
 <?php
 
-	e(json_encode($targetdata));
+	echo(json_encode($targetdata));
 
 ?>

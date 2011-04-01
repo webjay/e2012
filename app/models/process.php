@@ -2,7 +2,7 @@
 
 	class Process extends AppModel {
 		
-		var $actsAs = array('Digirate');
+		var $actsAs = array('Digirate', 'Containable');
 
 		var $belongsTo = array(
 			'Municipality'

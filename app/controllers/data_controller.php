@@ -163,20 +163,18 @@ class DataController extends AppController {
 			$this->cakeError('municipalityConnection');
 		}
 		// get data
-		$param = array(
+		$this->set('targetdata', $this->Target->find('first', array(
 			'conditions' => array(
-				'Target.user_id' => $this->Auth->user('id'),
 				'Target.municipality_id' => $mun['Municipality']['id'],
 				'Target.area_id' => $area_id
 			),
 			'order' => 'Target.modified DESC',
 			'recursive' => -1
-		);
+		)));
 		if (isset($this->params['url']['callback'])) {
 			$this->set('callback', $this->params['url']['callback']);
 		}
 		//Configure::write('debug', 0);
-		$this->set('targetdata', $this->Target->find('first', $param));
 	}
 
 	// Todo: rename to visual

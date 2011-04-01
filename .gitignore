@@ -1,1 +1,4 @@
 sess_*
+app/tmp/cache/views/*
+app/tmp/logs/*
+app/tmp/cache/persistent/*

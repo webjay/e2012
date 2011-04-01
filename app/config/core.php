@@ -34,7 +34,7 @@
  * In development mode, you need to click the flash message to continue.
  */
 	if (strpos(strtolower(env('SERVER_NAME')), 'digitaltlandkort.dk') !== false) {
-		Configure::write('debug', 0);
+		Configure::write('debug', 1);
 	} else {
 		Configure::write('debug', 1);
 	}
